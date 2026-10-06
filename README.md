@@ -4,13 +4,22 @@ Matter is a local Markdown workspace for notes, folders, attachments and interac
 
 ## Download
 
-The latest stable version is **Matter 0.1.7** for Windows x64.
+The latest stable version is **Matter 0.1.8** for Windows x64.
 
-- [Download Matter-Setup-0.1.7.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.1.7/Matter-Setup-0.1.7.exe)
-- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.1.7)
+- [Download Matter-Setup-0.1.8.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.1.8/Matter-Setup-0.1.8.exe)
+- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.1.8)
 - [All releases](https://github.com/Rodjon147/matter-releases/releases)
 
 The Windows installer is currently unsigned. Windows SmartScreen may display a warning.
+
+## What's new in 0.1.8
+
+- **Resizable photos.** Drag an image's corner to resize it while preserving its aspect ratio. Selection borders follow the actual image, including low-resolution photos.
+- **Reliable image dragging.** Drag a photo or its handle to move the complete image. Photos and incoming files cannot be dropped into a widget section, including gaps between cards.
+- **Text wrapping.** Choose Full width, Wrap left, Wrap right or Original size from the image controls. Sizes and placement are saved in Markdown and restored after restarting Matter.
+- **Automatic attachment cleanup.** Removing the last reference to an image or document removes its copy from workspace assets after the note saves successfully. Files used by other notes, Home or restorable trashed notes are retained; original files outside assets are untouched.
+- **Undo support.** Removed attachments can be restored from a temporary recovery cache outside the workspace. Recovery copies expire after 24 hours and are cleaned at workspace startup and hourly while Matter runs.
+- **Added regression coverage.** All 48 unit tests and the packaged Electron checks passed, including native image resizing/dragging, text wrapping, widget-section restrictions, attachment deletion, Undo and restart persistence.
 
 ## What's new in 0.1.7
 
