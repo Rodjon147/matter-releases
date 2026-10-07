@@ -4,13 +4,25 @@ Matter is a local Markdown workspace for notes, folders, attachments and interac
 
 ## Download
 
-The latest stable version is **Matter 0.1.8** for Windows x64.
+The latest stable version is **Matter 0.1.9** for Windows x64.
 
-- [Download Matter-Setup-0.1.8.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.1.8/Matter-Setup-0.1.8.exe)
-- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.1.8)
+- [Download Matter-Setup-0.1.9.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.1.9/Matter-Setup-0.1.9.exe)
+- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.1.9)
 - [All releases](https://github.com/Rodjon147/matter-releases/releases)
 
 The Windows installer is currently unsigned. Windows SmartScreen may display a warning.
+
+## What's new in 0.1.9
+
+- **Inline Explorer actions.** Create notes and folders or rename existing items directly in the file tree. Enter saves; Escape or leaving the input cancels. A pending row never creates an empty file on disk.
+- **Context-aware creation.** A selected folder receives new items; a selected note uses its parent. Click empty tree space to create at the workspace root. Right-click actions use the clicked item explicitly, and folder selection stays independent of the open note.
+- **Folder focus and root menu.** Folder disclosure arrows select the folder and return keyboard focus to Explorer. Selection uses a soft accent tint with a compact keyboard marker. Right-click empty tree space to create a root note/folder or open the workspace in your file manager; root actions also support Shift+F10.
+- **Keyboard navigation and focus.** Navigate with arrow keys and Home/End, open with Enter, rename with F2 and use Delete for the existing trash confirmation. Ctrl+N, the command palette and page Rename share Explorer commands. Rename selects the filename before its final extension.
+- **Reliable tree updates.** Inline validation handles invalid and duplicate names, write failures remain editable, and repeated Enter cannot create duplicates. Selection and editing follow external renames and deletions. Drag/drop, folder-first sorting and large-tree virtualization are preserved. Windows folder watching avoids locking folders during rename, move or trash; external changes are polled every 400 ms.
+- **Center alignment.** Position photos on the left, in the center or on the right.
+- **Independent text wrapping.** The separate Wrap text control keeps its setting when alignment changes. With wrapping disabled, text continues below the photo; with wrapping enabled, it runs beside the photo. Centered photos keep their position and wrap text on the right.
+- **Accessible hover controls.** Move directly from a photo to its controls without selecting it first. The hover area bridges the gap, and a brief closing delay supports diagonal movement toward controls wider than a small photo.
+- **Persistent layout.** Alignment and wrapping survive Markdown/HTML round trips, note moves and app restarts. Photos created in 0.1.8 keep their existing appearance.
 
 ## What's new in 0.1.8
 
