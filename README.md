@@ -1,16 +1,28 @@
 # Matter releases
 
-Matter is a local Markdown workspace for notes, folders, attachments and interactive Folder Widgets. This repository hosts the official Windows installers, update metadata and release notes. Application source is maintained separately in a private repository.
+Matter is a local Markdown workspace for notes, folders, attachments and interactive Folder and Collection widgets. This repository hosts the official Windows installers, update metadata and release notes. Application source is maintained separately in a private repository.
 
 ## Download
 
-The latest stable version is **Matter 0.1.9** for Windows x64.
+The latest stable version is **Matter 0.2.0** for Windows x64.
 
-- [Download Matter-Setup-0.1.9.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.1.9/Matter-Setup-0.1.9.exe)
-- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.1.9)
+- [Download Matter-Setup-0.2.0.exe](https://github.com/Rodjon147/matter-releases/releases/download/v0.2.0/Matter-Setup-0.2.0.exe)
+- [Release notes and verification files](https://github.com/Rodjon147/matter-releases/releases/tag/v0.2.0)
 - [All releases](https://github.com/Rodjon147/matter-releases/releases)
 
 The Windows installer is currently unsigned. Windows SmartScreen may display a warning.
+
+## What's new in 0.2.0
+
+- **Inline collections.** `/collection` inserts a widget immediately and focuses its name. Drag notes from the sidebar or hover the card to reveal the add button in its heading. The button fades without reserving a row in the note list. Files stay in their original locations.
+- **Live Folder widgets.** `/folder` opens the shared folder picker. Dragging a sidebar folder onto Homepage creates its widget beside existing cards or in a separate row, matching the preview. Contents follow file additions, deletions, renames and moves automatically.
+- **Reliable folder drops.** Each completed gesture creates one widget and removes its temporary preview. Delayed drag callbacks cannot recreate the preview or repeat the drop, including after moving a note out of its folder and back.
+- **Clear drag previews.** Sidebar additions and collection reordering use the same compact note card, without a top stripe or plus icon. The card replaces the source row during reordering and the empty-state instructions in an empty collection. The floating note label hides inside collection cards and returns outside them. Escape or dropping outside a valid target cancels the operation.
+- **Clean widget reordering.** Moving widgets within a row no longer leaves a blinking text caret between cards. Normal note and collection-title editing keep their caret.
+- **Drag to remove.** A removal zone appears in the source collection only while dragging one of its notes. Dropping there removes the collection reference while keeping the note file. Open / Remove from Collection remain available in each note's context menu.
+- **Grid resizing.** Drag a widget's right edge, bottom edge or corner. Width snaps to a 12-column grid and height to 16-pixel steps. At least three compact widgets fit on a row. Existing Folder widgets use the same resizing behavior.
+- **Content-aware minimum size.** Cards grow to fit their lists. Long names use ellipsis and full-path tooltips. Resizing cannot crop the list; Escape cancels the current resize.
+- **Shared resource picker.** Notes support multiple selection; folders support browsing and a single selection. Both use search, keyboard navigation, visible selections and virtualized large lists. Widget options menus, note counters and modal configuration editors have been removed; widget headings remain visible and collection names stay editable inline.
 
 ## What's new in 0.1.9
 
