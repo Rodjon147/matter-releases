@@ -13,6 +13,7 @@ The installer is currently unsigned. Windows SmartScreen may display a warning.
 - Rich text editing with a Markdown source view.
 - A customizable home page with folder and collection widgets.
 - Folders, tabs, search, note links and backlinks.
+- Trash with search, restore and permanent deletion.
 - Attachments, resizable images, text wrapping, autosave, and light and dark themes.
 
 ## Updates
