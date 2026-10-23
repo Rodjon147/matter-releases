@@ -16,6 +16,14 @@ The installer is currently unsigned. Windows SmartScreen may display a warning.
 - Trash with search, restore and permanent deletion.
 - Attachments, resizable images, text wrapping, autosave, and light and dark themes.
 
+## New in 0.2.5
+
+- A compact sidebar rail keeps navigation and actions available when collapsed.
+- Trash sits below Home in both states. Workspace and Settings share a compact footer with consistent icons.
+- Improved text contrast, table scrolling and Page details layout in narrower windows.
+
+[Matter 0.2.5 release notes](release-notes/v0.2.5.md)
+
 ## Updates
 
 Installed Windows versions download updates in the background. Installation starts after **Restart & Update** is selected and pending edits have been saved. Closing Matter normally does not install an update.
