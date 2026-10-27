@@ -4,30 +4,32 @@ Matter is a desktop app for Markdown notes. Notes, attachments and settings stay
 
 ## Download
 
-[Download Matter 0.3.0 for Windows x64](https://github.com/Rodjon147/matter-releases/releases/tag/v0.3.0)
+[Download Matter 0.3.5 for Windows x64](https://github.com/Rodjon147/matter-releases/releases/tag/v0.3.5)
 
-The installer is currently unsigned. Windows SmartScreen may display a warning.
+The installer is currently unsigned. Windows SmartScreen may display a warning. The release includes a manifest and SHA-256 checksums.
 
 ## Features
 
-- Rich text editing with a Markdown source view.
-- A customizable Home page with a visual block editor.
-- MOC note collections, section cards, recent notes, text, quick links, images, greetings and dividers.
+- Rich text editing with a Markdown source view and optional YAML note properties.
+- A live Contents outline with heading navigation and collapsible branches.
+- A customizable Home page with a visual block editor, note collections, section cards, recent notes, text, quick links, images, greetings and dividers.
 - Folders, tabs, search, note links and backlinks.
 - Trash with search, restore and permanent deletion.
-- Attachments, resizable images, text wrapping, autosave, and light and dark themes.
+- Attachments, resizable images, text wrapping, autosave, contextual table controls and undo/redo.
+- Dark, Light and System themes, with a refreshed Settings window.
+- English and Russian interface languages, switchable without restarting.
 
-## New in 0.3.0
+## New in 0.3.5
 
-Build your own Home by dragging blocks from the customization panel. Preview placement, arrange blocks in rows, choose their width and appearance, and keep your most useful notes and shortcuts close at hand.
+Navigate long notes with Contents, which follows your headings while you write or scroll. Click a heading to jump to its section in either the visual editor or Markdown source. Set automatic display in **Settings → Editor**.
 
-MOC replaces Home's Folder and Collection widgets with ordered note collections. Greeting and Divider are movable blocks. Undo/Redo, recoverable drafts and Done/Cancel let you try a layout before applying it. Existing Home content is backed up before migration; ordinary Markdown notes retain their editor.
+Settings now has theme preview cards, consistent switches, grouped controls and automatic saving. Choose **English** or **Russian** in **Settings → General → Application language**. Menus, command and block search, widgets, properties, tooltips, dialogs and app messages follow your choice; your note text and file names stay as written.
 
-Settings has more room and a compact header. Version information, the changelog and update checking now live in General. The first note widget no longer starts with an unwanted selection.
+Expand all folders to find the current note, or **Ctrl + click** the same button to open only its parent folders. This release also includes editable Obsidian-compatible YAML properties, dropdowns with reorderable options, local date/time defaults, contextual table editing and improved slash-menu keyboard navigation.
 
-[Matter 0.3.0 release notes](release-notes/v0.3.0.md)
+[Matter 0.3.5 release notes](release-notes/v0.3.5.md)
 
-The public update goes directly from 0.2.5 to 0.3.0. Intermediate local previews are not separate releases.
+The public update goes directly from 0.3.0 to 0.3.5. Intermediate local previews are not separate releases.
 
 ## Updates
 
